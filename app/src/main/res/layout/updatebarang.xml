@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UpdateBarang">
+
+    <!--edit text field for adding name-->
+    <EditText
+        android:id="@+id/inputupdateid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="40dp"
+        android:focusable="false"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:hint="ID"
+        android:textColor="#C3C3C3"
+        android:backgroundTint="@color/black"/>
+
+    <TextView
+        android:id="@+id/salahupdateid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"/>
+
+    <!--edit text for adding job-->
+    <EditText
+        android:id="@+id/inputupdatebarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Barang" />
+
+    <TextView
+        android:id="@+id/salahupdatebarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"/>
+
+    <EditText
+        android:id="@+id/inputupdateharga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:inputType="numberDecimal"
+        android:hint="Harga"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/salahupdateharga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"/>
+
+    <EditText
+        android:id="@+id/inputupdatesatuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:hint="Satuan"/>
+
+    <TextView
+        android:id="@+id/salahupdatesatuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"/>
+
+    <Button
+        android:id="@+id/buttonkirim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Selesai"
+        android:textColor="@color/white"/>
+
+    <!--progress bar for loading -->
+    <EditText
+        android:id="@+id/tampungdataid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"/>
+
+</LinearLayout>

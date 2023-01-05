@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    tools:context=".Register">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="37dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_aplikasi"/>
+
+        <TextView
+            android:layout_width="186dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20.07dp"
+
+            android:text="INVENTORY"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="122dp"
+        android:layout_height="39dp"
+        android:text="Daftar"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+
+        android:layout_marginTop="26dp"/>
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="22dp"
+        android:text="Buat Akunmu disini sekarang"
+        android:textSize="14sp"
+        android:textColor="#616462" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="36dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Username"
+            android:textColor="#191F23"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/registernama"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:hint="@string/masukan_username"
+        android:paddingStart="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="@string/email"
+            android:textSize="14sp"
+            android:textColor="#191F23" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="#F51A1A"
+            android:layout_marginStart="5dp"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/registeremail"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="@string/masukkan_alamat_email"
+        android:textSize="14sp"
+        android:textColor="#808495"
+        android:paddingStart="15dp"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="4dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="Password"
+            android:textSize="14sp"
+            android:textColor="#191F23" />
+
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etPasswordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:hint="@string/masukkan_password"
+        android:textColorHint="@color/black"
+        app:passwordToggleTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/registerpassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="4dp"
+            android:inputType="textWebPassword"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnDaftar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_rounded_button"
+        android:text="Daftar Sekarang"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:text="@string/sudah_punya_akun"
+            android:textSize="15sp"
+            android:textColor="#242A31" />
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:text="@string/login"
+            android:textSize="14sp"
+            android:textColor="#964B00"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/getregisterusername"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="100dp"
+        android:hint="Masukkan password"
+        android:paddingStart="154dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/getregisteremail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="Masukkan password"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:paddingStart="15dp"
+        android:layout_marginTop="4dp"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:id="@+id/getregisterpassword"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="Masukkan password"
+        android:textSize="14sp"
+        android:textColor="#808495"
+        android:paddingStart="15dp"
+        android:layout_marginTop="4dp"
+        android:visibility="invisible"/>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:padding="8dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="ID"
+            android:textStyle="bold"
+            android:id="@+id/idbarang"
+            android:textSize="28sp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:text="nama1"
+        android:textSize="23sp"
+        android:id="@+id/nama"
+        android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="hargabarang1"
+            android:textSize="23sp"
+            android:id="@+id/harga"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="satuan1"
+            android:textSize="23sp"
+            android:id="@+id/satuan"
+            android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="37dp">
+        <ImageView
+            android:id="@+id/btnhapus"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/minus_button" />
+
+        <ImageView
+            android:id="@+id/btnpencilupdate"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:paddingStart="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/pencil_png_648" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
